@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sensor.tugassatu.SensorFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_light"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:text="Light Output"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/light_output"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:text="Accelerometer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_accmeter"
+                android:paddingBottom="6dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="X: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_x"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd" />
+
+                <TextView
+                    android:text="X"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/output_x"
+                    android:layout_weight="1"
+                    android:textAlignment="viewStart" />
+
+                <TextView
+                    android:text="Y: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_y"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd" />
+
+                <TextView
+                    android:text="Y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/output_y"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:text="Z: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title_z"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd" />
+
+                <TextView
+                    android:text="Z"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/output_z"
+                    android:layout_weight="1"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <Button
+                android:text="Start Rec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/start_rec" />
+
+            <TextView
+                android:text="Recording"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rec_stat"
+                android:layout_below="@+id/frameLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:enabled="false"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
